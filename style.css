@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#home{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+#home img{
+    position: absolute;
+    width: 100%;
+    bottom: 0; 
+}
+#home img#bird1{
+    top: 240px;
+    left: -580px;
+}
+#home img#bird2{
+    top: 95px;
+    left: 450px;
+}
+#home #text{
+    font-family: "Protest Revolution", sans-serif;
+    font-size: 60px;
+    position: absolute;
+    color: white;
+    bottom: 320px;
+    right: -100px;
+}
+#content{
+    padding-top: 15rem;
+    position: relative;
+    background: linear-gradient(rgb(164 17 97) 50%, rgb(116 34 106));
+}
+#content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 10rem;
+    width: 100%;
+    background: linear-gradient(rgb(140 5 85) , rgb(164 17 97));
+}
+#content h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem 5rem;
+    font-size: 25px;
+    color: white;
+}
+#content p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem 5rem;
+    font-size: 18px;
+    color: white;
+}

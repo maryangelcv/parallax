@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Parallax Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section id="home">
+        <img src="/images/Sky.png" id="sky">
+        <img src="/images/volcanoes.png" id="volcanoes">
+        <h1 id="text">Parallax Effect</h1>
+        <img src="/images/Mountains.png" id="mountains">
+        <img src="/images/River.png" id="river">
+        <img src="/images/bird1.png" id="bird1">
+        <img src="/images/bird2.png" id="bird2">
+        <img src="/images/Land.png" id="land">  
+    </section>
+    <section id="content">
+        <h1>Parallax Website</h1>
+        <p>In the ever-evolving world of web design, parallax websites have emerged as a captivating trend that enhances user engagement and visual appeal. A parallax website employs a design technique where background elements move at a slower rate than foreground elements as users scroll through the page. This creates a sense of depth and motion, making the website feel more dynamic and immersive. The concept takes inspiration from the parallax effect used in animation and video games, where layered backgrounds simulate a 3D effect.</p>
+        <p>One of the primary advantages of a parallax website is its ability to tell a compelling story. By using visually engaging transitions and animations, businesses and creators can guide users through a narrative journey, presenting information in a way that feels natural and interactive. This storytelling potential is particularly effective for portfolio websites, product launches, and promotional campaigns, where creating a memorable experience is key.</p>
+        <p>From a technical perspective, implementing a parallax design involves careful use of HTML, CSS, and JavaScript. CSS properties like transform and translate are often used to control the movement of different layers, while JavaScript can add advanced interactions. Many modern web design tools and libraries also provide built-in support for parallax effects, making it easier for developers to create these visually striking websites without starting from scratch.</p>
+        <p>However, while parallax websites are undoubtedly eye-catching, they come with challenges. Performance optimization is critical to ensure smooth scrolling and animations, especially on mobile devices with limited processing power. Additionally, overusing parallax effects can make a website feel cluttered or slow, potentially frustrating users. Therefore, a balance must be struck to ensure that the design enhances user experience rather than detracting from it.</p>
+        <p>In conclusion, parallax websites represent a fusion of creativity and technology, offering a unique way to captivate audiences. They work best when used strategically, with a focus on storytelling and functionality. As the web continues to evolve, the parallax design trend demonstrates how innovative techniques can elevate the way we interact with digital content, making it both engaging and memorable.</p>
+    </section>
+
+    <script>
+        let sky=document.getElementById('sky');
+        let volcanoes=document.getElementById('volcanoes');
+        let text=document.getElementById('text');
+        let mountains=document.getElementById('mountains');
+        let river=document.getElementById('river');
+        let bird1=document.getElementById('bird1');
+        let bird2=document.getElementById('bird2');
+        let land=document.getElementById('land');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            sky.style.bottom = value * -1 + 'px';
+            volcanoes.style.bottom = value * -0.9 + 'px';
+            mountains.style.bottom = value * -0.8 + 'px';
+            river.style.bottom = value * -0.7 + 'px';
+            bird1.style.top = 240 + value * -1.1 + 'px';
+            bird1.style.left = -580 + value * 2 + 'px';
+            bird2.style.top = 95 + value * 1.5 + 'px';
+            bird2.style.left = 450 + value * -2 + 'px';
+            text.style.right = -100 + value * 2 + 'px';
+            text.style.bottom = 320 + value * -0.5 + 'px';
+
+
+        })
+
+    </script>
+</body>
+</html>
